@@ -1,0 +1,39 @@
+.btn {
+    cursor: pointer;
+    position: relative;
+    display: table;
+    font-size: 23px;
+    letter-spacing: 0.025em;
+    border: 0;
+    outline: none;
+    text-align: center;
+    @include border-radius(50px);
+    @include transition(box-shadow 0.3s);
+    &.btnGold {
+        @include linearGradientBorder;
+        @include linearGradientText;
+        &:hover {
+            @include box-shadow($shadow);
+        }
+    }
+    &.btnFullBlack {
+        @include transition(all 0.3s);
+        border: solid 1px #1c1d21;
+        color: #1c1d21;
+        &:hover {
+            background-color: #1c1d21;
+            color: #fff;
+        }
+    }
+    &.btnGreen {
+        background: transparent;
+        font-size: 16px;
+        color: #49bd58;
+        border: solid 1px #49bd58;
+        @include transition(all 0.3s);
+        &:hover {
+            background-color: #49bd58;
+            color: #fff;
+        }
+    }
+}
