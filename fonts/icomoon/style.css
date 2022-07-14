@@ -1,0 +1,234 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?sw44sp');
+  src:  url('fonts/icomoon.eot?sw44sp#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?sw44sp') format('truetype'),
+    url('fonts/icomoon.woff?sw44sp') format('woff'),
+    url('fonts/icomoon.svg?sw44sp#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-support:before {
+  content: "\e942";
+}
+.icon-location:before {
+  content: "\e940";
+}
+.icon-time:before {
+  content: "\e941";
+}
+.icon-telegram:before {
+  content: "\e93f";
+}
+.icon-222:before {
+  content: "\e900";
+}
+.icon-333:before {
+  content: "\e901";
+}
+.icon-accounting:before {
+  content: "\e902";
+}
+.icon-american-2:before {
+  content: "\e903";
+}
+.icon-american:before {
+  content: "\e904";
+}
+.icon-antivirus:before {
+  content: "\e905";
+}
+.icon-bill-2:before {
+  content: "\e906";
+}
+.icon-bill:before {
+  content: "\e907";
+}
+.icon-billing:before {
+  content: "\e908";
+}
+.icon-briefcase:before {
+  content: "\e909";
+}
+.icon-bulb:before {
+  content: "\e90a";
+}
+.icon-calc:before {
+  content: "\e90b";
+}
+.icon-calculator-3:before {
+  content: "\e90c";
+}
+.icon-calendar-4:before {
+  content: "\e90d";
+}
+.icon-calendar-5:before {
+  content: "\e90e";
+}
+.icon-calendar-6:before {
+  content: "\e90f";
+}
+.icon-calender:before {
+  content: "\e910";
+}
+.icon-call-on-speaker:before {
+  content: "\e911";
+}
+.icon-certificate-1:before {
+  content: "\e912";
+}
+.icon-certificate-2:before {
+  content: "\e913";
+}
+.icon-clip-1:before {
+  content: "\e914";
+}
+.icon-clock-4:before {
+  content: "\e915";
+}
+.icon-cryptocurrency-1:before {
+  content: "\e916";
+}
+.icon-darts:before {
+  content: "\e917";
+}
+.icon-edit-5:before {
+  content: "\e918";
+}
+.icon-employee-id:before {
+  content: "\e919";
+}
+.icon-exit:before {
+  content: "\e91a";
+}
+.icon-eye-2:before {
+  content: "\e91b";
+}
+.icon-forex:before {
+  content: "\e91c";
+}
+.icon-gear:before {
+  content: "\e91d";
+}
+.icon-globe-2:before {
+  content: "\e91e";
+}
+.icon-headphone-1:before {
+  content: "\e91f";
+}
+.icon-help:before {
+  content: "\e920";
+}
+.icon-indian:before {
+  content: "\e921";
+}
+.icon-indian3:before {
+  content: "\e922";
+}
+.icon-link-5:before {
+  content: "\e923";
+}
+.icon-mail-9:before {
+  content: "\e924";
+}
+.icon-market-trends:before {
+  content: "\e925";
+}
+.icon-money-2:before {
+  content: "\e926";
+}
+.icon-money-4:before {
+  content: "\e927";
+}
+.icon-newspaper:before {
+  content: "\e928";
+}
+.icon-online-analysis:before {
+  content: "\e929";
+}
+.icon-profit:before {
+  content: "\e92a";
+}
+.icon-project:before {
+  content: "\e92b";
+}
+.icon-review:before {
+  content: "\e92c";
+}
+.icon-safebox:before {
+  content: "\e92d";
+}
+.icon-server-3:before {
+  content: "\e92e";
+}
+.icon-several-solar-panels:before {
+  content: "\e92f";
+}
+.icon-share-1:before {
+  content: "\e930";
+}
+.icon-shield-4:before {
+  content: "\e931";
+}
+.icon-solar:before {
+  content: "\e932";
+}
+.icon-solar-panel-1:before {
+  content: "\e933";
+}
+.icon-solar-panel-3:before {
+  content: "\e934";
+}
+.icon-technology:before {
+  content: "\e935";
+}
+.icon-thumbs-up:before {
+  content: "\e936";
+}
+.icon-trading:before {
+  content: "\e937";
+}
+.icon-transfer-money-1:before {
+  content: "\e938";
+}
+.icon-transfer-money:before {
+  content: "\e939";
+}
+.icon-use:before {
+  content: "\e93a";
+}
+.icon-user-3:before {
+  content: "\e93b";
+}
+.icon-user-8:before {
+  content: "\e93c";
+}
+.icon-user-9:before {
+  content: "\e93d";
+}
+.icon-wallet-4:before {
+  content: "\e93e";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
