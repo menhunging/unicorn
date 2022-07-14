@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width,user-scalable=no'>
+  <title>Кабинет</title>
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+  <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css" />
+  <link rel="stylesheet" type="text/css" href="fonts/icomoon/style.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/slick.css" />
+  <link rel="stylesheet" type="text/css" href="css/selectric.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+  <div class="pageWrapper cab">
+
+    <header class="cabHeader">
+      <div class="logo">
+        <a href="#"></a>
+        <img src="img/logo-small.png" alt="">
+        <span class="textLogo">GoldUnicorn</span>
+      </div>
+      <div class="cabHeaderContent">
+        <nav class="cabMenu">
+          <ul>
+            <li class="active">
+              <a href="#"></a>
+              <span class="icon-billing"></span>
+              <span class="txt">мой офис</span>
+            </li>
+            <li>
+              <a href="#"></a>
+              <span class="icon-money-4"></span>
+              <span class="txt">Пополнить баланс</span>
+            </li>
+            <li>
+              <a href="#"></a>
+              <span class="icon-money-2"></span>
+              <span class="txt">инвестировать</span>
+            </li>
+            <li>
+              <a href="#"></a>
+              <span class="icon-transfer-money"></span>
+              <span class="txt">Внутренние переводы</span>
+            </li>
+            <li>
+              <a href="#"></a>
+              <span class="icon-wallet-4"></span>
+              <span class="txt">вывести средства</span>
+            </li>
+            <li>
+              <a href="#"></a>
+              <span class="icon-gear"></span>
+              <span class="txt">Данные и реквизиты</span>
+            </li>
+            <li>
+              <a href="#"></a>
+              <span class="icon-calendar-5"></span>
+              <span class="txt">операции</span>
+            </li>
+            <li>
+              <a href="#"></a>
+              <span class="icon-bill"></span>
+              <span class="txt">рекламные<br>
+                материалы</span>
+            </li>
+            <li>
+              <a href="#"></a>
+              <span class="icon-briefcase"></span>
+              <span class="txt">мои<br>
+                контракты</span>
+            </li>
+            <li>
+              <a href="#"></a>
+              <span class="icon-project"></span>
+              <span class="txt">реферальная<br>
+                программа</span>
+            </li>
+            <li>
+              <a href="#"></a>
+              <span class="icon-antivirus"></span>
+              <span class="txt">безопасность</span>
+            </li>
+            <li>
+              <a href="#"></a>
+              <span class="icon-bill-2"></span>
+              <span class="txt">новости</span>
+            </li>
+          </ul>
+        </nav>
+        <div class="controls">
+          <a href="#" class="btn btnGold support"> <span class="icon icon-headphone-1"></span> поддержка</a>
+          <a href="#" class="btn exit"> <span class="icon icon-exit"></span> выход</a>
+        </div>
+      </div>
+      <button class="menuBurger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </header>
+
+    <div class="graficCabMain">
+      <h2 class="capTitle">Мой офис</h2>
+      <div class="graficCabContent">
+        <div class="yourBalance">
+          <span class="title">Ваш баланс</span>
+          <span class="value">8900.00$</span>
+        </div>
+        <div class="stateGraf">
+          <div class="item">
+            <div class="line">
+              <span class="icon-transfer-money-1"></span>
+            </div>
+            <div class="line">
+              <span class="title">пополнено:</span>
+            </div>
+            <div class="line">
+              <span class="data replenished">1.943$</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="line">
+              <span class="icon-wallet-4"></span>
+            </div>
+            <div class="line">
+              <span class="title">общий баланс:</span>
+            </div>
+            <div class="line">
+              <span class="data value">4.300$</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="line">
+              <span class="icon-safebox"></span>
+            </div>
+            <div class="line">
+              <span class="title">на депозите:</span>
+            </div>
+            <div class="line">
+              <span class="data deposit">2.672$</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="line">
+              <span class="icon-indian"></span>
+            </div>
+            <div class="line">
+              <span class="title">ежедневные начисления:</span>
+            </div>
+            <div class="line">
+              <span class="data accruals">2.672$</span>
+            </div>
+          </div>
+        </div>
+        <div class="morisGrafic">
+          <figure class="highcharts-figure">
+            <div id="myOffice"></div>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="listValue">
+      <div class="item">
+        <div class="picture" style="background-image: url(img/vl1.png)"></div>
+        <span class="val">38.647$</span>
+        <a href="#" class="btn btnGold">пополнить</a>
+      </div>
+      <div class="item">
+        <div class="picture" style="background-image: url(img/vl2.png)"></div>
+        <span class="val">4.300$</span>
+        <a href="#" class="btn btnGold">пополнить</a>
+      </div>
+      <div class="item">
+        <div class="picture" style="background-image: url(img/vl3.png)"></div>
+        <span class="val">4.300$</span>
+        <a href="#" class="btn btnGold">пополнить</a>
+      </div>
+      <div class="item">
+        <div class="picture" style="background-image: url(img/vl4.png)"></div>
+        <span class="val">200$</span>
+        <a href="#" class="btn btnGold">пополнить</a>
+      </div>
+      <div class="item">
+        <div class="picture" style="background-image: url(img/vl5.png)"></div>
+        <span class="val">1.76$</span>
+        <a href="#" class="btn btnGold">пополнить</a>
+      </div>
+      <div class="item">
+        <div class="picture" style="background-image: url(img/vl6.png)"></div>
+        <span class="val">212$</span>
+        <a href="#" class="btn btnGold">пополнить</a>
+      </div>
+      <div class="item">
+        <div class="picture" style="background-image: url(img/vl7.png)"></div>
+        <span class="val">1.08$</span>
+        <a href="#" class="btn btnGold">пополнить</a>
+      </div>
+      <div class="item">
+        <div class="picture" style="background-image: url(img/vl8.png)"></div>
+        <span class="val">2.520$</span>
+        <a href="#" class="btn btnGold">пополнить</a>
+      </div>
+      <div class="item">
+        <div class="picture" style="background-image: url(img/vl9.png)"></div>
+        <span class="val">4300$</span>
+        <a href="#" class="btn btnGold">пополнить</a>
+      </div>
+      <div class="item">
+        <div class="picture" style="background-image: url(img/vl10.png)"></div>
+        <span class="val">105$</span>
+        <a href="#" class="btn btnGold">пополнить</a>
+      </div>
+    </div>
+
+    <div class="graficCurrents">
+      <figure class="highcharts-figure">
+        <div id="graficCurrentsContainer"></div>
+      </figure>
+    </div>
+
+    <div class="cabPartners">
+      <h2 class="capTitle">Партнеры</h2>
+      <div class="graficCabContent">
+        <div class="stateGraf">
+          <div class="item">
+            <div class="line">
+              <span class="icon-project"></span>
+            </div>
+            <div class="line">
+              <span class="title">Общее кол-во партнеров:</span>
+            </div>
+
+          </div>
+          <div class="item">
+            <div class="line">
+              <span class="icon-american"></span>
+            </div>
+            <div class="line">
+              <span class="title">Заработано реферальных
+              </span>
+            </div>
+
+          </div>
+          <div class="item">
+            <div class="line">
+              <span class="icon-user-8"></span>
+            </div>
+            <div class="line">
+              <span class="title">активные
+                партнеры</span>
+            </div>
+
+          </div>
+          <div class="item">
+            <div class="line">
+              <span class="icon-user-9"></span>
+            </div>
+            <div class="line">
+              <span class="title">неактивные партнеры:</span>
+            </div>
+
+          </div>
+        </div>
+        <div class="morisGrafic">
+          <figure class="highcharts-figure">
+            <div id="partners"></div>
+          </figure>
+        </div>
+        <!-- <div id="partners" class="morisGrafic"></div> -->
+      </div>
+      <div class="refLinks">
+        <h2 class="capTitle">реферальная ссылка:</h2>
+        <a href="#" class="link copyBtn"
+          data-clipboard-text="https://goldunicorn.com/referral/35896y90858985898">https://goldunicorn.com/referral/35896y90858985898</a>
+        <button class="btn btnGold copyBtn"
+          data-clipboard-text="https://goldunicorn.com/referral/35896y90858985898">скопировать</button>
+        <div class="copyMessage">Ссылка скопирована</div>
+      </div>
+    </div>
+
+    <div class="graficCurrents">
+      <figure class="highcharts-figure">
+        <div id="graficCurrentsContainer2"></div>
+      </figure>
+    </div>
+
+    <footer class="cabFooter">
+      <div class="copyRight">
+        <p>Copyright &copy;2022 Gold Unicorn.</p>
+        <p>Все права защищены.</p>
+      </div>
+      <div class="social">
+        <ul>
+          <li><a href="#"><span class="icon-telegram"></span></a></li>
+          <li><a href="#"><span class="icon-youtube"></span></a></li>
+          <li><a href="#"><span class="icon-facebook"></span></a></li>
+        </ul>
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+<script type='text/javascript' src='js/jquery-3.6.0.min.js'></script>
+<script type='text/javascript' src='js/clipboard.min.js'></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/jquery.knob.min.js"></script>
+<script type="text/javascript" src="js/jquery.selectric.js"></script>
+<script type="text/javascript" src="js/jquery.tabslet.min.js"></script>
+
+<!-- Grafic -->
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/variable-pie.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+<!-- /Grafic -->
+
+<script type="text/javascript" src="js/script.js"></script>
+
+</html>
