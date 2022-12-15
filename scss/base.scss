@@ -136,7 +136,7 @@ body {
             background-position: center;
             background-repeat: no-repeat;
             height: 100%;
-            width: 59px;
+            width: 40px;
             background-color: #2d303c;
             &::after {
                 display: none;
@@ -250,7 +250,7 @@ body {
 }
 
 .graficCurrents {
-    padding: 50px 50px;
+    padding: 0 50px 50px;
     background-color: #1c1d21;
 
     .highcharts-figure,
@@ -324,6 +324,7 @@ body {
         rgba(204, 170, 108, 1) 100%
     );
     z-index: 5;
+    text-align: center;
 }
 
 .message {
@@ -838,6 +839,7 @@ body {
         top: -12px;
         left: 63px;
         font-size: 12px;
+        -webkit-text-fill-color: initial;
     }
     .text {
     }
