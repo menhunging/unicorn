@@ -18,6 +18,116 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
 
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+  <script>
+
+    // данные для coins
+
+    let dataCoin1 = {
+      name: 'BTC',
+      color: '#fd9701'
+    }
+    let dataCoin2 = {
+      name: 'ETC',
+      color: '#6976e7',
+    }
+    let dataCoin3 = {
+      name: 'LTC',
+      color: '#01a0d7',
+    }
+    let dataCoin4 = {
+      name: 'ADA',
+      color: '#55c49b',
+    }
+    let dataCoin5 = {
+      name: 'SOL',
+      color: '#94bc5d',
+    }
+    let dataCoin6 = {
+      name: 'XRP',
+      color: '#afafae',
+    }
+    let dataCoin7 = {
+      name: 'TRX',
+      color: '#f25e79',
+    }
+    let dataCoin8 = {
+      name: 'BTC',
+      color: '#ea6100',
+    }
+    let dataCoin9 = {
+      name: 'BTC',
+      color: '#d71f24',
+
+    }
+    let dataCoin10 = {
+      name: 'BTC',
+      color: '#3fd5d6',
+
+    }
+
+    // данные для графика партнеров
+
+    let dataPartner1 = {
+      name: 'ETH',
+      color: '#fe6603',
+      data: [
+        [1483232400000, 1400],
+        [1483318800000, 500],
+        [1483405200000, 3800],
+        [1483491600000, 2500],
+        [1483578000000, 2200],
+        [1483664400000, 3500],
+        [1483750800000, 2300]]
+    }
+
+    let dataPartner2 = {
+      name: 'BRC',
+      color: '#8db35a',
+      data: [
+        [1483232400000, 1200],
+        [1483318800000, 500],
+        [1483405200000, 1800],
+        [1483491600000, 1500],
+        [1483578000000, 2500],
+        [1483664400000, 3100],
+        [1483750800000, 2300]]
+    }
+
+    let dataPartner3 = {
+      name: 'BTC',
+      color: '#d9576e',
+      data: [
+        [1483232400000, 4400],
+        [1483318800000, 100],
+        [1483405200000, 4200],
+        [1483491600000, 1200],
+        [1483578000000, 5200],
+        [1483664400000, 1200],
+        [1483750800000, 300]]
+    }
+
+    let dataPartner4 = {
+      name: 'ETC',
+      color: '#d5b947',
+      data: [[1483232400000, 200],
+      [1483318800000, 1500],
+      [1483405200000, 800],
+      [1483491600000, 1000],
+      [1483578000000, 1140],
+      [1483664400000, 2400],
+      [1483750800000, 1100]]
+    }
+
+    let defaultSeriesPartners = [
+      dataPartner1,
+      dataPartner2,
+      dataPartner3,
+      dataPartner4,
+    ]
+
+  </script>
+
 </head>
 
 <body>
@@ -98,8 +208,12 @@
           </ul>
         </nav>
         <div class="controls">
-          <a href="#" class="btn btnGold support"> <span class="icon icon-headphone-1"></span> поддержка</a>
-          <a href="#" class="btn exit"> <span class="icon icon-exit"></span> выход</a>
+          <div class="btnContainer btnGold">
+            <a href="#" class="btn support"> <span class="icon icon-headphone-1"></span> поддержка</a>
+          </div>
+          <div class="btnContainer">
+            <a href="#" class="btn exit"> <span class="icon icon-exit"></span> выход</a>
+          </div>          
         </div>
       </div>
       <button class="menuBurger">
@@ -164,6 +278,105 @@
         </div>
         <div class="morisGrafic">
           <figure class="highcharts-figure">
+            <script>
+              let color_grafoffice = ['#fd9701', '#6976e7', '#00abe7', '#52ba95', '#8db35a', '#afafae', '#d9576e', '#fe6603', '#d11f25', '#3dcacb']
+              let data_grafoffice = [
+                {
+                  innerSize: '95%',
+                  data: [{
+                    name: 'Bitcoin',
+                    replenished: 1500,
+                    y: 2200,
+                    dataСurrency: 1,
+                    dataСurrencyPrefix: 'BTC',
+                    deposit: 2500,
+                    accruals: 3000,
+                    icon: "vl1",
+                  }, {
+                    name: 'Ethereum',
+                    replenished: 1943,
+                    y: 4300,
+                    dataСurrency: 2,
+                    dataСurrencyPrefix: 'ETH',
+                    deposit: 2643,
+                    accruals: 2672,
+                    icon: "vl2",
+                  }, {
+                    name: 'Tether',
+                    replenished: 194,
+                    y: 430,
+                    dataСurrency: 3,
+                    dataСurrencyPrefix: 'USDT',
+                    deposit: 264,
+                    accruals: 267,
+                    icon: "vl3",
+                  }, {
+                    name: 'BNB',
+                    replenished: 1243,
+                    y: 4100,
+                    dataСurrency: 4,
+                    dataСurrencyPrefix: 'BNB',
+                    deposit: 2243,
+                    accruals: 2672,
+                    icon: "vl4",
+                  }, {
+                    name: 'XRP',
+                    replenished: 143,
+                    y: 400,
+                    dataСurrency: 5,
+                    dataСurrencyPrefix: 'XRP',
+                    icon: "vl5",
+                    deposit: 243,
+                    accruals: 272,
+                  }, {
+                    name: 'Cardano',
+                    replenished: 943,
+                    icon: "vl6",
+                    y: 300,
+                    dataСurrency: 6,
+                    dataСurrencyPrefix: 'ADA',
+                    deposit: 643,
+                    accruals: 672,
+                  }, {
+                    name: 'Solana',
+                    replenished: 5943,
+                    icon: "vl7",
+                    y: 7300,
+                    dataСurrency: 7,
+                    dataСurrencyPrefix: 'SOL',
+                    deposit: 4643,
+                    accruals: 6672,
+                  }, {
+                    name: 'Dogecoin',
+                    replenished: 2443,
+                    icon: "vl8",
+                    y: 1300,
+                    dataСurrency: 8,
+                    dataСurrencyPrefix: 'DOG',
+                    deposit: 4643,
+                    accruals: 6672,
+                  }, {
+                    name: 'Polkadot',
+                    replenished: 2943,
+                    y: 2000,
+                    dataСurrency: 9,
+                    dataСurrencyPrefix: 'POL',
+                    deposit: 3643,
+                    accruals: 1672,
+                    icon: "vl9",
+                  },
+                  {
+                    name: 'Tether',
+                    replenished: 2943,
+                    y: 2000,
+                    dataСurrency: 100,
+                    dataСurrencyPrefix: 'USDT',
+                    deposit: 3643,
+                    accruals: 1672,
+                    icon: "vl10",
+                  }]
+                }] 
+            </script>
             <div id="myOffice"></div>
           </figure>
         </div>
@@ -171,62 +384,101 @@
     </div>
 
     <div class="listValue">
-      <div class="item">
+      <div class="item active" data-value="dataCoin1" data-index="0">
         <div class="picture" style="background-image: url(img/vl1.png)"></div>
-        <span class="val">38.647$</span>
-        <a href="#" class="btn btnGold">пополнить</a>
+        <span class="val">38.647$</span>    
+        <div class="btnContainer btnGold">
+          <a href="#" class="btn"> пополнить</a>
+        </div>        
       </div>
-      <div class="item">
+      <div class="item" data-value="dataCoin2" data-index="1">
         <div class="picture" style="background-image: url(img/vl2.png)"></div>
         <span class="val">4.300$</span>
-        <a href="#" class="btn btnGold">пополнить</a>
+        <div class="btnContainer btnGold">
+          <a href="#" class="btn"> пополнить</a>
+        </div>
       </div>
-      <div class="item">
+      <div class="item" data-value="dataCoin3" data-index="2">
         <div class="picture" style="background-image: url(img/vl3.png)"></div>
         <span class="val">4.300$</span>
-        <a href="#" class="btn btnGold">пополнить</a>
+        <div class="btnContainer btnGold">
+          <a href="#" class="btn"> пополнить</a>
+        </div>
       </div>
-      <div class="item">
+      <div class="item" data-value="dataCoin4" data-index="3">
         <div class="picture" style="background-image: url(img/vl4.png)"></div>
         <span class="val">200$</span>
-        <a href="#" class="btn btnGold">пополнить</a>
+        <div class="btnContainer btnGold">
+          <a href="#" class="btn"> пополнить</a>
+        </div>
       </div>
-      <div class="item">
+      <div class="item" data-value="dataCoin5" data-index="4">
         <div class="picture" style="background-image: url(img/vl5.png)"></div>
         <span class="val">1.76$</span>
-        <a href="#" class="btn btnGold">пополнить</a>
+        <div class="btnContainer btnGold">
+          <a href="#" class="btn"> пополнить</a>
+        </div>
       </div>
-      <div class="item">
+      <div class="item" data-value="dataCoin6" data-index="5">
         <div class="picture" style="background-image: url(img/vl6.png)"></div>
         <span class="val">212$</span>
-        <a href="#" class="btn btnGold">пополнить</a>
+        <div class="btnContainer btnGold">
+          <a href="#" class="btn"> пополнить</a>
+        </div>
       </div>
-      <div class="item">
+      <div class="item" data-value="dataCoin7" data-index="6">
         <div class="picture" style="background-image: url(img/vl7.png)"></div>
         <span class="val">1.08$</span>
-        <a href="#" class="btn btnGold">пополнить</a>
+        <div class="btnContainer btnGold">
+          <a href="#" class="btn"> пополнить</a>
+        </div>
       </div>
-      <div class="item">
+      <div class="item" data-value="dataCoin8" data-index="7">
         <div class="picture" style="background-image: url(img/vl8.png)"></div>
         <span class="val">2.520$</span>
-        <a href="#" class="btn btnGold">пополнить</a>
+        <div class="btnContainer btnGold">
+          <a href="#" class="btn"> пополнить</a>
+        </div>
       </div>
-      <div class="item">
+      <div class="item" data-value="dataCoin9" data-index="8">
         <div class="picture" style="background-image: url(img/vl9.png)"></div>
         <span class="val">4300$</span>
-        <a href="#" class="btn btnGold">пополнить</a>
+        <div class="btnContainer btnGold">
+          <a href="#" class="btn"> пополнить</a>
+        </div>
       </div>
-      <div class="item">
+      <div class="item" data-value="dataCoin10" data-index="9">
         <div class="picture" style="background-image: url(img/vl10.png)"></div>
         <span class="val">105$</span>
-        <a href="#" class="btn btnGold">пополнить</a>
+        <div class="btnContainer btnGold">
+          <a href="#" class="btn"> пополнить</a>
+        </div>
       </div>
     </div>
 
     <div class="graficCurrents">
-      <figure class="highcharts-figure">
-        <div id="graficCurrentsContainer"></div>
-      </figure>
+      <div class="graficCurrentsHead">
+        <div class="col">
+          <span class="value">3784.00$</span>
+          <span class="valueCur">1 ETH</span>
+        </div>
+        <div class="col">
+          <span class="percent">5.18%</span>
+          <span class="time">24H CHANGE</span>
+        </div>
+        <span class="icon"></span>
+      </div>
+      <div class="graficCurrentsBody">
+        <ul class="changeTime">
+          <li><span data-interval="1M">1м</span></li>
+          <li><span data-interval="1w">1н</span></li>
+          <li><span class="active" data-interval="1d">1д</span></li>
+          <li><span data-interval="1h">1ч</span></li>
+        </ul>
+        <figure class="highcharts-figure">
+          <div id="graficCurrentsContainer"></div>
+        </figure>
+      </div>
     </div>
 
     <div class="cabPartners">
@@ -238,7 +490,7 @@
               <span class="icon-project"></span>
             </div>
             <div class="line">
-              <span class="title">Общее кол-во партнеров:</span>
+              <span class="title" data-index="0">Общее кол-во партнеров:</span>
             </div>
 
           </div>
@@ -247,7 +499,7 @@
               <span class="icon-american"></span>
             </div>
             <div class="line">
-              <span class="title">Заработано реферальных
+              <span class="title" data-index="1" data-profit="1">Заработано реферальных
               </span>
             </div>
 
@@ -257,7 +509,7 @@
               <span class="icon-user-8"></span>
             </div>
             <div class="line">
-              <span class="title">активные
+              <span class="title" data-index="2">активные
                 партнеры</span>
             </div>
 
@@ -267,29 +519,60 @@
               <span class="icon-user-9"></span>
             </div>
             <div class="line">
-              <span class="title">неактивные партнеры:</span>
+              <span class="title" data-index="3">неактивные партнеры:</span>
             </div>
 
           </div>
         </div>
         <div class="morisGrafic">
           <figure class="highcharts-figure">
+            <script>
+              let color_grafPartner = ['#fe6603', '#8db35a', '#d9576e', '#d5b947']
+              let data_grafPartner = [{
+                name: 'Общее кол-во партнеров',
+                y: 5000,
+                title: 'ETH',
+                color: '#fe6603',
+                values: dataPartner1
+              },
+              {
+                name: 'Заработано реферальных',
+                y: 1200,
+                title: 'BRC',
+                color: '#8db35a',
+                values: dataPartner2
+              },
+              {
+                name: 'активные партнеры',
+                y: 2000,
+                title: 'BTC',
+                color: '#d9576e',
+                values: dataPartner3
+              },
+              {
+                name: 'неактивные партнеры',
+                y: 1500,
+                title: 'ETC',
+                color: '#d5b947',
+                values: dataPartner4
+              },]
+            </script>
             <div id="partners"></div>
           </figure>
         </div>
-        <!-- <div id="partners" class="morisGrafic"></div> -->
       </div>
       <div class="refLinks">
         <h2 class="capTitle">реферальная ссылка:</h2>
         <a href="#" class="link copyBtn"
-          data-clipboard-text="https://goldunicorn.com/referral/35896y90858985898">https://goldunicorn.com/referral/35896y90858985898</a>
-        <button class="btn btnGold copyBtn"
-          data-clipboard-text="https://goldunicorn.com/referral/35896y90858985898">скопировать</button>
+          data-clipboard-text="https://goldunicorn.com/referral/35896y90858985898">https://goldunicorn.com/referral/35896y90858985898</a>      
+          <div class="btnContainer btnGold">
+            <button title="скопировать" class="btn copyBtn" data-clipboard-text="https://goldunicorn.com/referral/35896y90858985898">скопировать</button>
+          </div>
         <div class="copyMessage">Ссылка скопирована</div>
       </div>
     </div>
 
-    <div class="graficCurrents">
+    <div class="graficCurrents graficPartners">
       <figure class="highcharts-figure">
         <div id="graficCurrentsContainer2"></div>
       </figure>
@@ -330,5 +613,28 @@
 <!-- /Grafic -->
 
 <script type="text/javascript" src="js/script.js"></script>
+
+<script>
+
+  const getData = (current = 'BTC', interval = '1d', grafic, series) => {
+    fetch(`https://api.binance.com/api/v1/klines?symbol=${current}USDT&interval=${interval}`)
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        myData = [];
+        data = data.reverse();
+        for (let i = 0; i < 10; i += 1) {
+          myData[i] = [];
+          myData[i][0] = data[i][0];
+          myData[i][1] = Number(data[i][2]);
+        }
+        series.data = myData;
+        // console.log(`LOAD: ${current}, Interval: ${interval}`, series);
+        setDataGraf(grafic, series);
+      });
+  }
+
+</script>
 
 </html>

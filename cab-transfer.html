@@ -95,8 +95,12 @@
           </ul>
         </nav>
         <div class="controls">
-          <a href="#" class="btn btnGold support"> <span class="icon icon-headphone-1"></span> поддержка</a>
-          <a href="#" class="btn exit"> <span class="icon icon-exit"></span> выход</a>
+          <div class="btnContainer btnGold">
+            <a href="#" class="btn support"> <span class="icon icon-headphone-1"></span> поддержка</a>
+          </div>
+          <div class="btnContainer">
+            <a href="#" class="btn exit"> <span class="icon icon-exit"></span> выход</a>
+          </div>          
         </div>
       </div>
       <button class="menuBurger">
@@ -190,10 +194,10 @@
           </li>
         </ul>
       </div>
-      <button type="submit" class="btn btnGold">Перевести</button>
+      <div class="btnContainer btnGold">
+        <button title="Перевести" type="submit" class="btn">Перевести</button>
+      </div>
     </form>
-
-
     <footer class="cabFooter">
       <div class="copyRight">
         <p>Copyright &copy;2022 Gold Unicorn.</p>

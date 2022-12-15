@@ -95,8 +95,12 @@
           </ul>
         </nav>
         <div class="controls">
-          <a href="#" class="btn btnGold support"> <span class="icon icon-headphone-1"></span> поддержка</a>
-          <a href="#" class="btn exit"> <span class="icon icon-exit"></span> выход</a>
+          <div class="btnContainer btnGold">
+            <a href="#" class="btn support"> <span class="icon icon-headphone-1"></span> поддержка</a>
+          </div>
+          <div class="btnContainer">
+            <a href="#" class="btn exit"> <span class="icon icon-exit"></span> выход</a>
+          </div>          
         </div>
       </div>
       <button class="menuBurger">
@@ -157,7 +161,7 @@
               <div class="inputWrapper">
                 <label for="">Платежная<br>
                   система:</label>
-                <select class="selectric selectricBalance">
+                <select class="selectric selectricBalance" data-label-val="Доступный баланс">
                   <option value="" selected> Выбрать</option>
                   <option value="" data-image="img/vl1.png" data-color="#fd9701"> 38,647.77 BTC</option>
                   <option value="" data-image="img/vl2.png" data-color="#6976e7"> 38,647.77 ETH</option>
@@ -196,7 +200,7 @@
               <div class="inputWrapper">
                 <label for="">Платежная<br>
                   система:</label>
-                  <select class="selectric selectricBalance">
+                  <select class="selectric selectricBalance" data-label-val="Доступный баланс">
                     <option value="" selected> Выбрать</option>
                     <option value="" data-image="img/vl1.png" data-color="#fd9701"> 38,647.77 BTC</option>
                     <option value="" data-image="img/vl2.png" data-color="#6976e7"> 38,647.77 ETH</option>
@@ -342,7 +346,7 @@
                 <div class="inputWrapper">
                   <label for="">Платежная<br>
                     система:</label>
-                  <select class="selectric">
+                  <select class="selectric selectricCoins">
                     <option value="">Выбрать</option>
                     <option value="">Выбрать</option>
                     <option value="">Выбрать</option>

@@ -4,7 +4,7 @@
 <head>
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width,user-scalable=no'>
-  <title>Партнерская программма</title>
+  <title>Кабинет</title>
 
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -14,13 +14,19 @@
 
   <link rel="stylesheet" type="text/css" href="css/slick.css" />
   <link rel="stylesheet" type="text/css" href="css/selectric.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+
+
 </head>
 
 <body>
   <div class="pageWrapper cab">
 
-    <header class="cabHeader">
+    <header class="cabHeader authHeader">
       <div class="logo">
         <a href="#"></a>
         <img src="img/logo-small.png" alt="">
@@ -29,7 +35,7 @@
       <div class="cabHeaderContent">
         <nav class="cabMenu">
           <ul>
-            <li>
+            <li class="active">
               <a href="#"></a>
               <span class="icon-billing"></span>
               <span class="txt">мой офис</span>
@@ -94,14 +100,25 @@
             </li>
           </ul>
         </nav>
-        <div class="controls">
-          <div class="btnContainer btnGold">
-            <a href="#" class="btn support"> <span class="icon icon-headphone-1"></span> поддержка</a>
+        <div class="cabUsers">
+          <div class="user">
+            <div class="userAvatar openMod" data-modal="modal_dep" style="background-image: url(img/pic_user1.png)">
+            </div>
+            <div class="info">
+              <span class="tit">Добро пожаловать:</span>
+              <span class="userName">Сидорова Анна Петровна</span>
+            </div>
+          </div>        
+          <div class="controls">
+            <div class="btnContainer">
+              <a href="#" class="btn exit"> <span class="icon icon-exit"></span> выход</a>
+            </div>  
+            <div class="btnContainer btnGold">
+              <a href="#" class="btn support"> <span class="icon icon-headphone-1"></span> поддержка</a>
+            </div>                   
           </div>
-          <div class="btnContainer">
-            <a href="#" class="btn exit"> <span class="icon icon-exit"></span> выход</a>
-          </div>          
         </div>
+
       </div>
       <button class="menuBurger">
         <span class="line"></span>
@@ -124,7 +141,8 @@
         <div class="item">
           <span class="icon-link-5"></span>
           <span class="tit">Ваша партнерская ссылка:</span>
-          <a href="#" class="link copyBtn" data-clipboard-text="https://goldunicoirn.com/referral/567898933">https://goldunicoirn.com/referral/567898933</a>
+          <a href="#" class="link copyBtn"
+            data-clipboard-text="https://goldunicoirn.com/referral/567898933">https://goldunicoirn.com/referral/567898933</a>
           <div class="copyMessage">
             Cкопировано
           </div>
@@ -579,7 +597,94 @@
       </div>
     </footer>
 
+    <div class="modalsScroll">
+      <div class="modals table">
+        <div class="middle tCell">
+          <div class="blockMod" id="modal_dep">
+            <div class="in">
+              <span class="closeModal">
+                <span></span>
+                <span></span>
+              </span>
+              <div class="modalsContentWrap">
+                <div class="chooseAvatar">
+                  <h2 class="cap">Выбрать аватарку:</h2>
+                  <div class="avatarList">
+                    <div class="avatarItem">
+                      <input type="radio" id="rad1" name="avatar">
+                      <label for="rad1">
+                        <img src="img/pic_user1.png" alt="">
+                      </label>
+                    </div>
+                    <div class="avatarItem">
+                      <input type="radio" id="rad2" name="avatar">
+                      <label for="rad2">
+                        <img src="img/pic_user2.png" alt="">
+                      </label>
+                    </div>
+                    <div class="avatarItem">
+                      <input type="radio" id="rad3" name="avatar">
+                      <label for="rad3">
+                        <img src="img/pic_user3.png" alt="">
+                      </label>
+                    </div>
+                    <div class="avatarItem">
+                      <input type="radio" id="rad4" name="avatar">
+                      <label for="rad4">
+                        <img src="img/pic_user4.png" alt="">
+                      </label>
+                    </div>
+                    <div class="avatarItem">
+                      <input type="radio" id="rad5" name="avatar">
+                      <label for="rad5">
+                        <img src="img/pic_user5.png" alt="">
+                      </label>
+                    </div>
+  
+                    <div class="avatarItem">
+                      <input type="radio" id="rad6" name="avatar">
+                      <label for="rad6">
+                        <img src="img/pic_user6.png" alt="">
+                      </label>
+                    </div>
+                    <div class="avatarItem">
+                      <input type="radio" id="rad7" name="avatar">
+                      <label for="rad7">
+                        <img src="img/pic_user7.png" alt="">
+                      </label>
+                    </div>
+                    <div class="avatarItem">
+                      <input type="radio" id="rad8" name="avatar">
+                      <label for="rad8">
+                        <img src="img/pic_user8.png" alt="">
+                      </label>
+                    </div>
+                    <div class="avatarItem">
+                      <input type="radio" id="rad9" name="avatar">
+                      <label for="rad9">
+                        <img src="img/pic_user9.png" alt="">
+                      </label>
+                    </div>
+                    <div class="avatarItem">
+                      <input type="radio" id="rad10" name="avatar">
+                      <label for="rad10">
+                        <img src="img/pic_user10.png" alt="">
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlayModal"></div>
+    </div>
+
   </div>
+
+
+
 </body>
 
 <script type='text/javascript' src='js/jquery-3.6.0.min.js'></script>
@@ -590,14 +695,18 @@
 <script type="text/javascript" src="js/jquery.tabslet.min.js"></script>
 
 <!-- Grafic -->
+
 <script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/modules/data.js"></script>
-<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/variable-pie.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
 <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
 <!-- /Grafic -->
 
+<script type="text/javascript" src="js/modal.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+
+
 
 </html>
